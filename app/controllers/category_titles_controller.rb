@@ -1,0 +1,2 @@
+class CategoryTitlesController < ApplicationController
+end

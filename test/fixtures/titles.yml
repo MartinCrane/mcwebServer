@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  director: 
+  producer: 
+  category: 
+  audio1: MyString
+  audio2: MyString
+  video1: MyString
+  video2: MyString
+  image_url: MyString
+  media_url: MyString
+  credit: MyString
+
+two:
+  name: MyString
+  director: 
+  producer: 
+  category: 
+  audio1: MyString
+  audio2: MyString
+  video1: MyString
+  video2: MyString
+  image_url: MyString
+  media_url: MyString
+  credit: MyString

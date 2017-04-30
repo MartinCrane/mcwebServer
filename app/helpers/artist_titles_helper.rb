@@ -1,0 +1,2 @@
+module ArtistTitlesHelper
+end
