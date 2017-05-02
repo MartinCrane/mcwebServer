@@ -10,10 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170430200040) do
+ActiveRecord::Schema.define(version: 20170501181000) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "accounts", force: :cascade do |t|
+    t.string "name"
+    t.string "password_digest"
+    t.string "email"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "artist_titles", force: :cascade do |t|
     t.integer "artist_id"
@@ -54,6 +62,16 @@ ActiveRecord::Schema.define(version: 20170430200040) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "posts", force: :cascade do |t|
+    t.string "title"
+    t.text "body"
+    t.string "date"
+    t.boolean "archive"
+    t.integer "account_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "producers", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
@@ -62,6 +80,8 @@ ActiveRecord::Schema.define(version: 20170430200040) do
 
   create_table "titles", force: :cascade do |t|
     t.string "name"
+    t.string "tags", array: true
+    t.string "author"
     t.string "audio1"
     t.string "audio2"
     t.string "video1"

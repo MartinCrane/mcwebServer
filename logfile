@@ -14,3 +14,5 @@ STATEMENT:  SELECT  "directors".* FROM "directors" WHERE "directors"."title_id" 
 FATAL:  database "mcwebServer_development" does not exist
 ERROR:  column directors.title_id does not exist at character 46
 STATEMENT:  SELECT  "directors".* FROM "directors" WHERE "directors"."title_id" = $1 LIMIT $2
+FATAL:  database "mcwebServer_development" does not exist
+FATAL:  database "mcwebServer_development" does not exist

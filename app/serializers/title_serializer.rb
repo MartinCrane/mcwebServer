@@ -1,3 +1,3 @@
 class TitleSerializer < ActiveModel::Serializer
-  attributes :id, :name, :directors, :audio1, :audio2, :imageUrl, :credit, :year, :body, :categories, :artists
+  attributes :name, :imageUrl, :credit, :year, :body, :tags, :author
 end
